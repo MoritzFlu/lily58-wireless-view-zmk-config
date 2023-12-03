@@ -12,7 +12,7 @@
 
 
 / {
-    left_encoder: left_encoder {
+    left_encoder {
         compatible = "alps,ec11";
         label = "L_ENCODER";
         steps = <40>;
@@ -21,7 +21,7 @@
         b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
     };
 
-    right_encoder: right_encoder {
+    right_encoder: encoder_right {
         compatible = "alps,ec11";
         label = "R_ENCODER";
         steps = <40>;
