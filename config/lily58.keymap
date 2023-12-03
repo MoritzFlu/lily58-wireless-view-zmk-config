@@ -11,16 +11,21 @@
 
 
 / {
-    encoder_left {
-        a-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    left_encoder: encoder_left {
+        a-gpios = <&pro_micro 21 GPIO_ACTIVE_HIGH>;
+        b-gpios = <&pro_micro 20 GPIO_ACTIVE_HIGH>;
         steps = <40>;
     };
 
-    encoder_right {
-        a-gpios = <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    right_encoder: encoder_right {
+        a-gpios = <&pro_micro 0 GPIO_PULL_UP>;
+        b-gpios = <&pro_micro 1 GPIO_PULL_UP>;
         steps = <40>;
+    };
+
+    sensors {
+        sensors = <&left_encoder &right_encoder>;
+        triggers-per-rotation = <40>;
     };
 
     keymap {
