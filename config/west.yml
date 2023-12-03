@@ -2,10 +2,14 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
+    - name: narze
+      url-base: https://github.com/narze
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: narze
+      revision: splitkb-aurora-lily58-with-double-encoders-infused-kim
       import: app/west.yml
   self:
     path: config
