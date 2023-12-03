@@ -31,8 +31,7 @@
         b-gpios = <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
     };
 
-    sensors: sensors {
-        compatible = "zmk,keymap-sensors";
+    sensors {
         sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <40>;
     };
