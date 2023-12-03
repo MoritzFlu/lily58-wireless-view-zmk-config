@@ -4,12 +4,12 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: petejohanson
       url-base: https://github.com/petejohanson
-    - name: narze
-      url-base: https://github.com/narze
+    - name: mine
+      url-base: https://github.com/NoRyyZ
   projects:
-    - name: zmk
-      remote: narze
-      revision: splitkb-aurora-lily58-with-double-encoders-infused-kim
+    - name: zmk-dula-encoder
+      remote: mine
+      revision: main
       import: app/west.yml
   self:
     path: config
