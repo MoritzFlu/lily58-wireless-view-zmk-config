@@ -12,18 +12,6 @@
 
 
 / {
-    right_encoder: encoder_right {
-        compatible = "alps,ec11";
-        label = "R_ENCODER";
-        steps = <80>;
-        a-gpios = <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    };
-
-    sensors {
-        sensors = <&left_encoder &right_encoder>;
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
