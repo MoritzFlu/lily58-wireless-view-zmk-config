@@ -13,10 +13,10 @@
 
 / {
     left_encoder {
-        steps = 36;
+        steps = <36>;
     };
     right_encoder {
-        steps = 36;
+        steps = <36>;
     };
     sensors {
         triggers-per-rotation = <36>;
